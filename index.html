@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy clone</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+    }
+    header { 
+        background-color: rgb(110, 13, 213);
+        color: white;
+
+        padding: 20px;
+        font-size: 20px;
+
+    }
+    header p {
+        text-align: center;
+    }
+    .material-symbols-outlined {
+        font-variation-settings: 
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48,
+    }
+    .first-container {
+        background-image: url(,/image/bg-image2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-attachment: fixed; */
+        width: 90%;
+        height: 500px;
+        margin: auto;
+        position: relative;
+    }
+    .first-container .child-one {
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 23em;
+        padding: 25px;
+        margin: 8em;
+        margin: 100px 70px;
+        position: absolute;
+    }
+    .child-one h1{
+        font-size: 37px;
+    }
+    .child-one p{
+        font-size: 19px;
+        margin-top: 15px;
+        line-height: 25px;
+    }
+    .second-container {
+        margin: 90px;
+        padding: 20px;
+    }
+    .second-container h2 {
+        font-size: 32px;
+    }
+    .second-container p{
+        font-size: 19px;
+        margin-top: 15px;
+        width: 90%;
+    }
+    .second-container nav {
+        margin-top: 50px;
+    }
+    .second-container nav a {
+        text-decoration: none;
+        color: rgb(111, 109, 109);
+    }
+    .second-container nav a:hover {
+        color: black;
+    }
+    .second-container nav a:visited {
+        color: black;
+    }
+    categories {
+        width: 90%;
+        margin-top: 60px;
+    }
+    .categories h2 {
+        font-size: 25px;
+    }
+    .cards img {
+        width: 300px;
+    }
+    .cards h3 {
+        font-size: 19px;
+        margin-top: 12px;
+    }
+    .cards-container {
+        margin-top: 20px;
+        display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-areas: 'cards cards cards cards';
+    }
+    .featured {
+        background-color: rgb(241, 242, 242);
+        padding: 110px;
+        height: 450px;
+    }
+    .featured h2 {
+        font-size: 25px;
+    }
+    .f-card h3 {
+        font-size: 22px;
+    }
+    .f-card a {
+        font-size: 20px;
+        color: rgb(83, 48, 223);
+        padding-top: 10px;
+    }
+    .f-card li {
+        font-size: 20px;
+        list-style-type: none;
+    }
+    .card-arrange {
+        margin-top: 20px;
+    }
+    .featured button {
+        padding: 12px;
+        border: 1.5px solid black;
+        margin-top: 30px;
+    }
+    .f-container {
+        margin-top: 20px;
+        display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-areas: 'f-card f-card f-card f-card';
+    }
+    .trusted {
+        margin-top: 70px;
+    }
+    .trusted h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .trusted p {
+        font-size: 17px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .logos {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .business {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        width: 80%;
+        margin: 100px auto;
+    }
+    .image img {
+        width: 400px;
+    }
+    .business .text img {
+        width: 200px;
+        margin: 0px auto;
+    }
+    .business .text h2 {
+        /* text-align: center; */
+        font-size: 40px;
+    }
+    .business .text ul {
+        font-size: 22px;
+        margin: 20px;
+    }
+    .business .text {
+        width: 500px;
+        margin: auto;
+    }
+</style>
+<body>
+    <main>
+        <header>
+            <span>
+                <b>Future-ready skills on your schedule</b> | Learn why Udemy is trusted by 12.5k+ companies around
+                the world
+            </span>
+            <span class="material-symbols-outlined" >
+                close
+            </span>
+        </header>
+
+        <div class="first-container">
+            <div class="child-one">
+                <h1>Learning that gets you</h1>
+                <p>Skills for your present (and your future).
+                <br>
+                Get started with us.</p>
+            </div>
+        </div>
+
+        <!-- this is for the second section -->
+        <div class="second-container">
+            <h2>A board selection of courses</h2>
+            <p>Choose from 213,000 online video courses with new additions every month</p>
+            <nav>
+                <a href="#">Python</a>
+                <a href="#">Excel</a>
+                <a href="#">Web development</a>
+                <a href="#">Javascript</a>
+                <a href="#">Data Science</a>
+                <a href="#">AWS Certificate</a>
+                <a href="#">Drawing</a>
+            </nav>
+            <!-- <div class="pyton opportunities"> -->
+                <!-- <h2>Expand your career opportunities with Python</h2> -->
+                <!-- <p>Take one of Udemy's range of Python courses and learn how to code using incredibly -->
+                    <!-- useful language. It's simple syntax and readability makes Python perfect for Flask, Django, -->
+                    <!-- Data science, and machine learning. You'll learn how to build everything from ... -->
+                <!-- </p> -->
+                <!-- <button>Explore Python</button> -->
+
+                <!-- <div class="python-opportunities-cards" > -->
+                        <!-- <div class="first-cards"> -->
+                            <!-- <img src="" alt=""> -->
+                            <!-- <h3>Learn Pyhton: The Complete Pthon Programming Course</h3> -->
+                            <!-- <p>Avinash Jain, The Codex</p> -->
+                            <!-- <p>4.3 <img src="" alt="">(4,004)</p> -->
+                            <!-- <p>14,900</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="fourth-card" > -->
+                            <!-- <img src="" alt=""> -->
+                            <!-- <h3>Python From Scratch & Selenium WebDriver QA...</h3> -->
+                            <!-- <p>Admas Kinfu</p> -->
+                            <!-- <p>4.5 <img src="" alt="">(2, 215)</p> -->
+                            <!-- <p>19,900</p> -->
+                            <!-- <p>Bestseller</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="fifth-card"> -->
+                            <!-- <img src="" alt=""> -->
+                            <!-- <h3>Teach Your Kids to Code: Learn to Program Python at Any Age!</h3> -->
+                            <!-- <p>Bryson Payne</p> -->
+                            <!-- <p>4.4<img src="" alt="">(9,033) </p> -->
+                            <!-- <p>6,500</p> -->
+                            <!-- <p>Bestseller</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="sixth-card"> -->
+                            <!-- <img src="" alt=""> -->
+                            <!-- <h3>Python for Data Structures, Alogrithms, and Interviews!</h3> -->
+                            <!-- <p>Jose Portila</p> -->
+                            <!-- <p>4.4 <img src="" alt="">(10,950)</p> -->
+                            <!-- <p>14,900</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="seventh-card"> -->
+                            <!-- <img src="" alt=""> -->
+                            <!-- <h3>Automate the Boring Stuff with Python programming</h3> -->
+                            <!-- <p>AI Sweigart</p> -->
+                            <!-- <p>4.7 <img src="" alt="">(103,846)</p> -->
+                            <!-- <p>14,900</p>/ -->
+                        <!-- </div> -->
+                        <!-- <div class="eight-card"> -->
+                            <!-- <img src="" alt=""> -->
+                            <!-- <h3>Python 3 For Offensive PenTest: A Complete Practic...</h3> -->
+                            <!-- <p>Hussam Khrais</p> -->
+                            <!-- <p>4.6 <img src="" alt="">(1,596)</p> -->
+                            <!-- <p>(14,900></p> -->
+                        <!-- </div> -->
+                        <!-- <div class="first-card"> -->
+                            <!-- <img src="" alt=""> -->
+                            <!-- <h3>2022 Complete Pyhton Bootcamp From Zero to Hero</h3> -->
+                            <!-- <p>Jose Portilla</p> -->
+                            <!-- <p>4.6 <img src="" alt="">(443,219)</p> -->
+                            <!-- <p>14,900</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="first-card"> -->
+                            <!-- <img src="" alt=""> -->
+                            <!-- <h3>Taming Big Data with Apache Spark and Python - Hands on!</h3> -->
+                            <!-- <p>4.5 <img src="" alt="">(13,959)</p> -->
+                            <!-- <p>5,500</p> -->
+                            <!-- <p>Bestseller</p> -->
+                        <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- this is the third section -->
+                
+                <div>
+                    <h2>
+                        Students are viewing
+                    </h2>
+                    <div class="first-card">
+                        <img src="" alt="">
+                        <h3>Learn Pyhton: The Complete Python Programming Course</h3>
+                        <p>Avinash Jain, The Codex</p>
+                        <p>4.3 <img src="" alt="">(4,004)</p>
+                        <p>14,900</p>
+                    </div>
+                    <div class="first-card">
+                        <img src="" alt="">
+                        <h3>Learn Pyhton: The Complete Python Programming Course</h3>
+                        <p>Avinash Jain, The Codex</p>
+                        <p>4.3 <img src="" alt="">(4,004)</p>
+                        <p>14,900</p>
+                    </div>
+                    <div class="first-card">
+                        <img src="" alt="">
+                        <h3>Learn Pyhton: The Complete Python Programming Course</h3>
+                        <p>Avinash Jain, The Codex</p>
+                        <p>4.3 <img src="" alt="">(4,004)</p>
+                        <p>14,900</p>
+                    </div>
+                    <div class="first-card">
+                        <img src="" alt="">
+                        <h3>Learn Pyhton: The Complete Python Programming Course</h3>
+                        <p>Avinash Jain, The Codex</p>
+                        <p>4.3 <img src="" alt="">(4,004)</p>
+                        <p>14,900</p>
+                    </div>
+                    <div class="first-card">
+                        <img src="" alt="">
+                        <h3>Learn Pyhton: The Complete Python Programming Course</h3>
+                        <p>Avinash Jain, The Codex</p>
+                        <p>4.3 <img src="" alt="">(4,004)</p>
+                        <p>14,900</p>
+                    </div>
+                    <div class="first-card">
+                        <img src="" alt="">
+                        <h3>Learn Pyhton: The Complete Python Programming Course</h3>
+                        <p>Avinash Jain, The Codex</p>
+                        <p>4.3 <img src="" alt="">(4,004)</p>
+                        <p>14,900</p>
+                    </div>
+                    <div class="first-card">
+                        <img src="" alt="">
+                        <h3>Learn Pyhton: The Complete Python Programming Course</h3>
+                        <p>Avinash Jain, The Codex</p>
+                        <p>4.3 <img src="" alt="">(4,004)</p>
+                        <p>14,900</p>
+                    </div>
+                    <div class="first-card">
+                        <img src="" alt="">
+                        <h3>Learn Pyhton: The Complete Python Programming Course</h3>
+                        <p>Avinash Jain, The Codex</p>
+                        <p>4.3 <img src="" alt="">(4,004)</p>
+                        <p>14,900</p>
+                    </div>
+                </div>
+
+                <!-- this is for the fourth section -->
+
+                <div class="categories">
+                    <h2>Top Categories</h2>
+                    <div class="cards-container">
+                    <div class="cards">
+                        <a href="#"><img src="./design.jpg" alt="design"></a>
+                        <h3>Design</h3>
+                </div>
+                <div class="cards">
+                    <a href="#"><img src="./development.jpg" alt="web development"></a>
+                    <h3>Development</h3>
+                </div>
+                <div class="cards" >
+                    <a href="#"><img src="./marketing.jpg" alt="marketing"></a>
+                    <h3>Marketing</h3>
+                </div>
+                <div class="cards" >
+                    <a href="#"><img src="./IT.jpg" alt="IT and Software"></a>
+                    <h3>IT and Software</h3>
+                </div>
+                <div class="cards" >
+                    <a href="#"><img src="./pdev.jpg" alt="personal development"></a>
+                    <h3>Personal Development</h3>
+                </div>
+                <div class="cards" >
+                    <a href="#"><img src="./business.jpg" alt="business"></a>
+                    <h3>Business</h3>
+                </div>
+                <div class="cards" >
+                    <a href="#"><img src="./photography.jpg" alt="photography"></a>
+                    <h3>Photography</h3>
+                </div>
+                <div>
+                    <a href="#"><img src="./music.jpg" alt="music"></a>
+                    <h3>Music</h3>
+                </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- this is for the sixth section -->
+
+        <div class="featured">
+            <h2>Featured topics by category</h2>
+            <div class="f-container"></div>
+            <div class="f-card">
+                <h3>Development</h3>
+                <div class="card-arrange"></div>
+                <a href="#">
+                    <b><li>Pyhton</li></b>
+                </a>
+                <li>36,354,994 students</li>
+        </div>
+        <div class="card-arrange">
+            <a href="#">
+                <b><li>Web Development</li></b>
+            </a>
+            <li>11,415,615 students</li>
+        </div>
+        <div class="card-arrange">
+            <a href="#">
+                <b><li>Machine Learning</li></b>
+            </a>
+            <li>7,070,015</li>
+        </div>
+        <div class="f-card">
+            <h3>Business</h3>
+            <div class="card-arrange"></div>
+            <a href="#">
+                <b><li>Financial Analysis</li></b>
+            </a>
+            <li>1,195, students</li>
+        </div>
+        <div class="card-arrange">
+            <a href="#">
+                <b><li>5QL</li></b>
+            </a>
+            <li>5,977,561 students</li>
+        </div>
+        <div class="card-arrange">
+            <a href="#">
+                <b><li>PMP</li></b>
+            </a>
+            <li>1,733,398 students</li>
+        </div>
+
+        <div class="f-card">
+            <h3>IT and Software</h3>
+            <div class="card-arrange">
+                <a hre="#">
+                    <b><li>AWS Certification</li></b>
+                </a>
+                <li>6,078,244 stdents</li>
+        </div>
+        <div class="card-arrange">
+            <a href="#">
+                <b><li>Ethical Hacking</li></b>
+            </a>
+            <li>10,931,066 students</li>
+        </div>
+        <div class="card-arrange">
+            <a href="#">
+                <b><li>Cyber Security</li></b>
+            </a>
+            <li>3,998,037 students</li>
+            </div>
+               
+        </div>
+        <div class="f-card">
+            <h3>Design</h3>
+            <div class="card-arrange">
+                <a href="#">
+                    <b><li>Photoshop</li></b>
+                </a>
+                <li>10,909,736 students</li>
+        </div>
+        <div class="card-arrange">
+            <a href="#">
+                <b><li>Graphic Design</li></b>
+            </a>
+            <li>3,381,052 students</li>
+        </div>
+        <div class="card-arrange">
+            <a href="#">
+                <b><li>Drawing</li></b>
+            </a>
+            <li>2,410,849 students</li>
+        </div>
+        <div>
+            <button><b>Explore more topics</b></button>
+        </div>
+        <!-- section 7 -->
+
+        <div class="trusted">
+            <h2>Trusted by over 13,400 great teams</h2>
+            <p>Leading companies use the same courses to help employees keep their skills fresh</p>
+
+            <div class="logos">
+                <img src="./nasdaq-dark.svg" alt="nasdaq logo"/>
+                <img src="./volkswagen-dark.svg" alt="volkswagen logo"/>
+                <img src="./box-dark.svg" alt="box logo"/>
+                <img src="./netapp-dark.svg" alt="netapp logo"/>
+                <img src="./eventbrite-dark.svg" alt="eventbrite logo"/>
+                <img src="./tcs-dark.svg" alt="tcs logo"/>
+            </div>
+            <img src="" alt="">
+
+            <div class="business">
+                <div class="text">
+                    <img src="./logo-ub.svg" alt="udemy business logo">
+                    <h2>Upslill your team with Udemy Business</h2>
+            <ul>
+                <li>Unlimited access to 19,000+ Udemy courses, anytime, anywhere</li>
+                <li>International course collection in 14 languages</li>
+                <li>Top certification in tech and business</li>
+            </ul>
+            <button>Get Udemy Business</button>
+            <button>Learn more</button>
+            </div>
+
+            <div class="image">
+                <img src="./promo.jpg" alt="smiling team">
+            </div>
+        </div>
+        <div class="text">
+            <h2>Become an instructor</h2>
+            <p>Instructors from around the world teach millions of students on Udemy.
+                <br>
+                We provide the tools and skills to teach what you love.
+            </p>
+            <button>Start teaching today</button>
+            <div>
+                <img src="./instructor.jpg" alt="instructor">
+            </div>
+        </div>
+        <!-- section 8 -->
+
+        <div>
+            <a href="#">
+                <li>Udemy Business</li>
+            </a>
+            <a href="#">
+                <li>Teach on udemy</li>
+            </a>
+            <a href="#">
+                <li>Get the app</li>
+            </a>
+            <a href="#">
+                <li>About us</li>
+            </a>
+            <a href="#">
+                <li>Contact us</li>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <li>Careers</li>
+            </a>
+            <a href="#">
+                <li>Blog</li>
+            </a>
+            <a href="#">
+                <li>Help and Support</li>
+            </a>
+            <a href="#">
+                <li>Affiliate</li>
+            </a>
+            <a href="#">
+                <li>Investors</li>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <li>Terms</li>
+            </a>
+            <a href="#">
+                <li>Privacy policy</li>
+            </a>
+            <a href="#">
+                <li>Cookie settings</li>
+            </a>
+            <a href="#">
+                <li>Sitemap</li>
+            </a>
+            <a href="#">
+                <li>Accessibility statement</li>
+            </a>
+        </div>
+        <div>
+            <button>English</button>
+        </div>
+        <footer>
+            <img src="" alt="">
+            <p>&copy; 2022 Udemy, Inc.-</p>
+        </footer>
+    </main>
+</body>
+</html>
